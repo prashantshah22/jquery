@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/slicknav.css" />
+  <link rel="stylesheet" href="style/skitter.css" />
+  <link rel="stylesheet" href="style/slick.css" />
+  <link rel="stylesheet" href="style/slick-theme.css" />
+
+  <script src="script/script.js" defer></script>
+  <script src="script/jquery.slicknav.js"></script>
+  <script src="script/jquery.easing.1.3.js"></script>
+  <script src="script/jquery.skitter.js"></script>
+  <script src="script/tailwind.config.js" type="module"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script/slick.js"></script>
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- <div class="loader_con">
+    <div class="slide_left"></div>
+    <div class="slide_right"></div>
+    <i class="fa fa-spinner fa-pulse fa-3x fa-fw loader_fa"></i>
+  </div> -->
+  <!-- Mobile Menu -->
+  <ul class="mobile_menu">
+    <li><a href="">Home</a></li>
+    <li><a href="">Gallery</a></li>
+    <li><a href="">Services</a></li>
+    <li><a href="">Contact Us</a></li>
+  </ul>
+  <!-- Desktop Menu -->
+  <ul class="desk_menu">
+    <div class="brand_name">
+      <li><a href="#">Prashant Shah</a></li>
+    </div>
+    <div class="nav_menu">
+      <li><a href="">Home</a></li>
+      <li><a href="">Gallery</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Contact Us</a></li>
+    </div>
+  </ul>
+  <!-- Big Slider -->
+
+  <div class="skitter skitter-large div_slider">
+    <ul>
+      <li>
+        <a href="#cubeSize"><img src="images/pexels-designecologist-1779487.jpg" class="cubeSize" /></a>
+        <!-- <div class="label_text"><p>cut</p></div> -->
+      </li>
+      <li>
+        <a href="#swapBlocks"><img src="images/pexels-kevin-ku-92347-577585.jpg" class="swapBlocks" /></a>
+        <!-- <div class="label_text"><p>swapBlocks</p></div> -->
+      </li>
+      <li>
+        <a href="#cubeRandom"><img src="images/pexels-markusspiske-1089440.jpg" class="cubeRandom" /></a>
+        <!-- <div class="label_text"><p>swapBarsBack</p></div> -->
+      </li>
+    </ul>
+  </div>
+
+  <!-- slider label -->
+  <div class="class_slider">
+    <center>
+      <h1 class="picone_header">Web Designing is Our Passion</h1>
+      <button class="picone_button"><a href="">Hire Us!</a></button>
+      <br /><br />
+      <h1 class="contact_header text-blue-700">About Me</h1>
+      <p class="contact_para text-[#00cad4]">
+        I am web designer with multiple projects
+      </p>
+      <button class="contact_button">
+        <a href="" class="text-green-500">Contact Me!</a>
+      </button>
+    </center>
+  </div>
+  <div class="text-[40px] mt-[20px] w-[100%] text-center text-blue-700 font-bold">
+    My Projects
+  </div>
+  <div class="slider center w-[80%] mx-auto my-[15px]">
+    <div><img src="images/logo.jpg" class="w-[80%] h-[80%]" /></div>
+    <div><img src="images/logo1.png" class="w-[80%] h-[80%]" /></div>
+    <div><img src="images/logo2.png" class="w-[80%] h-[80%]" /></div>
+    <div><img src="images/logo3.png" class="w-[80%] h-[80%]" /></div>
+    <div><img src="images/logo4.png" class="w-[80%] h-[80%]" /></div>
+    <div><img src="images/logo5.png" class="w-[80%] h-[80%]" /></div>
+    <div><img src="images/logo6.png" class="w-[80%] h-[80%]" /></div>
+    <div><img src="images/logo7.png" class="w-[80%] h-[80%]" /></div>
+    <div><img src="images/cmpny.jpg" class="w-[80%] h-[80%]" /></div>
+  </div>
+  <!-- About Me -->
+  <div class="w-full h-auto flex-auto">
+    <div class="w-4/12  p-2 h-1/2 float-left ">
+      <img src="images/pexels-kevin-ku-92347-577585.jpg" class="w-full h-full" alt="" />
+    </div>
+
+    <div class="w-8/12 h-1/2 float-left sm:clear">
+      <div class="p-3 w-full h-[30%] text-center font-bold text-xl text-gray-500 sm:clear-left">
+        <h1>About Me</h1>
+        <p class="text-sm text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+          tenetur sint ipsum itaque cum? Quis incidunt repellat quas!
+          Doloremque harum adipisci temporibus eaque totam voluptatibus
+          blanditiis eos libero ipsam consectetur.
+        </p>
+      </div>
+      <div class="w-full h-[70%]">
+        <div class="w-1/2 h-1/2 float-left p-2">
+          <i class="fa fa-globe text-green-900 text-[30px] float-left" aria-hidden="true"></i>
+          <div class="w-[87%] h-full float-left ml-5">
+            <h1 class="text-gray-500 text-center font-bold uppercase">
+              Web Design
+            </h1>
+            <p class="text-gray-500 text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia,
+              nostrum hic corrupti obcaecati
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2 h-1/2 float-left p-2">
+          <i class="fa fa-pencil text-green-900 text-[30px] float-left" aria-hidden="true"></i>
+          <div class="w-[87%] h-full float-left ml-5">
+            <h1 class="text-gray-500 text-center font-bold uppercase">
+              Graphic Design
+            </h1>
+            <p class="text-gray-500 text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia,
+              nostrum hic corrupti obcaecati
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2 h-1/border-2 border-dashed border-green-600 float-left p-2 mt-[10px]">
+          <i class="fa fa-users text-green-900 text-[30px] float-left" aria-hidden="true"></i>
+          <div class="w-[86%] h-full float-left ml-5">
+            <h1 class="text-gray-500 text-center font-bold uppercase">
+              Online Marketing
+            </h1>
+            <p class="text-gray-500 text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia,
+              nostrum hic corrupti obcaecati
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2 h-1/2 float-left p-2 mt-[10px]">
+          <i class="fa fa-paperclip text-green-900 text-[30px] float-left" aria-hidden="true"></i>
+          <div class="w-[87%] h-full float-left ml-7">
+            <h1 class="text-gray-500 text-center font-bold uppercase">SEO</h1>
+            <p class="text-gray-500 text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia,
+              nostrum hic corrupti obcaecati
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-1/2 h-1/2 clear-left float-left mt-[10px]">
+      <h1 class="w-full h-1/12 text-center font-extrabold text-2xl text-gray-500">
+        My Skills
+      </h1>
+      <p class="w-full h-10/12 p-4 pl-14">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        nemo. Labore voluptatem consequuntur in reiciendis. Deserunt,
+        praesentium fugiat molestias quia voluptatem, a enim officiis commodi
+        nemo excepturi, autem explicabo hic! <br />
+        <br />
+        Inventore, minima qui. Ipsam amet alias totam ducimus reiciendis,
+        provident distinctio iusto ipsum maiores autem voluptas labore,
+        eligendi dolorem consectetur illum corporis doloremque perferendis
+        aut? Veritatis ullam minus officia possimus
+      </p>
+      <button
+        class="h-[50px] w-[120px] border-2 border-green-500 border-solid mx-[35%] text-green-600 text-lg font-extrabold hover:bg-lime-500 hover:text-yellow-200">
+        Contact Us!
+      </button>
+    </div>
+    <div class="w-1/2 h-1/2 float-left">
+      <div class="w-full h-[50px] mb-2 p-2">
+        <div class="w-[50%] h-full bg-lime-500 font-extrabold text-white text-xl pl-2">
+          Photoshop
+        </div>
+      </div>
+      <div class="w-full h-[50px] mb-2 p-2">
+        <div class="w-[40%] h-full bg-lime-500 font-extrabold text-white text-xl pl-2">
+          Illustration
+        </div>
+      </div>
+      <div class="w-full h-[50px] mb-2 p-2">
+        <div class="w-[80%] h-full bg-lime-500 font-extrabold text-white text-xl pl-2">
+          Html/Css
+        </div>
+      </div>
+      <div class="w-full h-[50px] mb-2 p-2">
+        <div class="w-[85%] h-full bg-lime-500 font-extrabold text-white text-xl pl-2">
+          JavaScript
+        </div>
+      </div>
+      <div class="w-full h-[50px] mb-2 p-2">
+        <div class="w-[60%] h-full bg-lime-500 font-extrabold text-white text-xl pl-2">
+          php/mysql
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- What prople thinks -->
+  <h1 class="float-left text-center text-2xl mt-7 font-extrabold text-gray-400">What peole Says</h1>
+  <div class=" client w-[90%] h-[200px] p-5 m-8  float-left">
+    <div class="w-1/4 h-full border-2 border-dotted border-gray-700">
+      <div>
+        <img src="images/cmpny.jpg" alt=""
+          class="size-14 m-2 rounded-full border-2 border-solid border-gray-400 float-left">
+        <div class="float-left w-[70%] m-2 h-10 ">
+          <h1 class="text-left w-full h-[50%] font-semibold">Person 1</h1>
+          <p class="text-xs text-left">Person 1</p>
+        </div>
+        <div class="clear-left float-left pl-14 ">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-1/4 h-full border-2 border-dotted border-gray-700">
+      <div>
+        <img src="images/logo.jpg" alt=""
+          class="size-14 m-2 rounded-full border-2 border-solid border-gray-400 float-left">
+        <div class="float-left w-[70%] m-2 h-10 ">
+          <h1 class="text-left w-full h-[50%] font-semibold">Person 2</h1>
+          <p class="text-xs text-left">Person 2</p>
+        </div>
+        <div class="clear-left float-left pl-14 ">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-1/4 h-full border-2 border-dotted border-gray-700">
+      <div>
+        <img src="images/logo1.png" alt=""
+          class="size-14 m-2 rounded-full border-2 border-solid border-gray-400 float-left">
+        <div class="float-left w-[70%] m-2 h-10 ">
+          <h1 class="text-left w-full h-[50%] font-semibold">Person 3</h1>
+          <p class="text-xs text-left">Person 3</p>
+        </div>
+        <div class="clear-left float-left pl-14 ">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-1/4 h-full border-2 border-dotted border-gray-700">
+      <div>
+        <img src="images/logo2.png" alt=""
+          class="size-14 m-2 rounded-full border-2 border-solid border-gray-400 float-left">
+        <div class="float-left w-[70%] m-2 h-10 ">
+          <h1 class="text-left w-full h-[50%] font-semibold">Person 4</h1>
+          <p class="text-xs text-left">Person 4</p>
+        </div>
+        <div class="clear-left float-left pl-14 ">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, </p>
+        </div>
+      </div>
+    </div>
+      
+    <div class="w-1/4 h-full border-2 border-dotted border-gray-700">
+      <div>
+        <img src="images/logo3.png" alt=""
+          class="size-14 m-2 rounded-full border-2 border-solid border-gray-400 float-left">
+        <div class="float-left w-[70%] m-2 h-10 ">
+          <h1 class="text-left w-full h-[50%] font-semibold">Person 5</h1>
+          <p class="text-xs text-left">Person 5</p>
+        </div>
+        <div class="clear-left float-left pl-14 ">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class=" scrollTop fixed z-50 right-4 hidden bottom-5"> <i class="fa fa-chevron-circle-up  text-blue-500 text-5xl" aria-hidden="true"></i></a>
+
+</body>
+
+</html>

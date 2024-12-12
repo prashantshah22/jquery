@@ -1,0 +1,163 @@
+window.onload= ()=>{
+    $(document).ready(
+        ()=>{
+            $(".loader_fa").fadeOut(1000,
+                ()=>{
+                    $(".slide_left,.slide_right").animate({
+                        "width":"0%"
+                    },1000,()=>{
+                        $(".loader_con").fadeOut();
+                    });
+                }
+            );
+        }
+    );
+}
+$(()=>{
+    $(".mobile_menu").slicknav({
+        label:"",
+        brand:"Prashant Shah"
+
+    });
+});
+$(document).ready(function() {
+    $(".skitter-large").skitter();
+  });
+$(document).ready(()=>{
+    $(".picone_header").slideDown(1000,()=>{
+        $(".picone_button").fadeIn(1000,()=>{
+            $(".picone_header,.picone_button").delay(200).fadeOut(()=>{
+                $(".class_slider").css("background","rgba(0,0,0,0.8)");
+                $(".contact_header").fadeIn(1000,()=>{
+                    $(".contact_para").show(1500,()=>{
+                        $(".contact_button").fadeIn(1000,()=>{
+                            $(".contact_header,.contact_button,.contact_para").delay(2800).fadeOut(
+                                ()=>{
+                                    if($(window).width()>991){
+                                    $(".class_slider").css("background","inherit");}
+                                }
+                            )
+                        });
+                    })
+                });
+            });
+        });
+    });
+})
+$(document).ready(
+    setInterval(()=>{
+            $(".picone_header").slideDown(1000,()=>{
+                $(".picone_button").fadeIn(1000,()=>{
+                    $(".picone_header,.picone_button").delay(200).fadeOut(()=>{
+                        $(".class_slider").css("background","rgba(0,0,0,0.8)");
+                        $(".contact_header").fadeIn(1000,()=>{
+                            $(".contact_para").show(1500,()=>{
+                                $(".contact_button").fadeIn(1000,()=>{
+                                    $(".contact_header,.contact_button,.contact_para").delay(2800).fadeOut(
+                                        ()=>{ if($(window).width()>991){
+                                            $(".class_slider").css("background","inherit")};});
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        },10500)
+)
+$(document).ready(()=>{
+    $(".center").slick({
+        dots:false,
+        infinite:true,
+        centerMode:true,
+        slidesToShow:5,
+        slidesToScroll:2,
+        speed:300,
+        autoplaySpeed:300,
+        autoplay: true,
+        responsive:[
+            {
+                breakpoint:768,
+                settings:{
+                    dots:false,
+                    infinite:true,
+                    centerMode:true,
+                    slidesToShow:3,
+                    slidesToScroll:2,
+                    speed:300,
+                    autoplaySpeed:300,
+                    autoplay: true,
+                    centerPadding:"40px"
+                }
+            },{
+                breakpoint:480,
+                settings:{
+                    dots:false,
+                    infinite:true,
+                    centerMode:true,
+                    slidesToShow:1,
+                    slidesToScroll:1,
+                    speed:300,
+                    autoplaySpeed:300,
+                    autoplay: true,
+                }
+            }
+        ]
+    });
+})
+
+
+$(document).ready(()=>{
+    $(".client").slick({
+        dots:false,
+        infinite:true,
+        centerMode:true,
+        slidesToShow:2,
+        slidesToScroll:1,
+        speed:300,
+        autoplaySpeed:300,
+        autoplay: true,
+        responsive:[
+            {
+                breakpoint:768,
+                settings:{
+                    dots:false,
+                    infinite:true,
+                    centerMode:true,
+                    slidesToShow:2,
+                    slidesToScroll:1,
+                    speed:300,
+                    autoplaySpeed:300,
+                    autoplay: true,
+                    centerPadding:"40px"
+                }
+            },{
+                breakpoint:480,
+                settings:{
+                    dots:false,
+                    infinite:true,
+                    centerMode:true,
+                    slidesToShow:1,
+                    slidesToScroll:1,
+                    speed:300,
+                    autoplaySpeed:300,
+                    autoplay: true,
+                }
+            }
+        ]
+    });
+});
+
+$(document).ready(()=>{
+    $(window).scroll((e)=>{
+        if($(e.target).scrollTop()>200){
+            $(".scrollTop").fadeIn();
+        }
+        else{
+            $(".scrollTop").fadeOut();
+        }
+        $(".scrollTop").click((event)=>{
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+});
